@@ -7,7 +7,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        ddl-auto: update
+        ddl-auto: create
   datasource:
     driver-class-name : com.mysql.cj.jdbc.Driver
     url : jdbc:mysql://jorjodb-1.cua3nia2nd7j.ap-northeast-2.rds.amazonaws.com:3306/springboot?serverTimezone=UTC&characterEncoding=UTF-8

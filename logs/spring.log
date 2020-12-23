@@ -4430,3 +4430,17 @@ org.hibernate.LazyInitializationException: failed to lazily initialize a collect
 2020-12-23 14:51:38.123 DEBUG 9104 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
 2020-12-23 14:51:38.128 DEBUG 9104 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
 2020-12-23 14:51:38.142 DEBUG 9104 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-23 15:24:04.985 DEBUG 9104 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-23 15:24:04.986 DEBUG 9104 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.login.LoginController#login(String, String, Model)
+2020-12-23 15:24:04.988 DEBUG 9104 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-23 15:24:05.003 DEBUG 9104 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-23 15:24:05.032 DEBUG 9104 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/base.css", parameters={}
+2020-12-23 15:24:05.034 DEBUG 9104 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-23 15:24:05.036 DEBUG 9104 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-12-23 15:24:09.156 DEBUG 9104 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-23 15:24:09.158 DEBUG 9104 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-23 15:24:09.160 DEBUG 9104 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-23 15:24:09.168 DEBUG 9104 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-23 15:24:09.216 DEBUG 9104 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/jorjo.jpg", parameters={}
+2020-12-23 15:24:09.217 DEBUG 9104 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-23 15:24:09.220 DEBUG 9104 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
