@@ -1,0 +1,41 @@
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        ddl-auto: update
+  datasource:
+    driver-class-name : com.mysql.cj.jdbc.Driver
+    #url : jdbc:mysql://jorjodb-1.cua3nia2nd7j.ap-northeast-2.rds.amazonaws.com:3306/springboot?serverTimezone=UTC&characterEncoding=UTF-8
+    url : jdbc:mysql://localhost:3306/kbdata?serverTimezone=UTC&characterEncoding=UTF-8
+    username : root
+    #password : 3204jjyHa!
+    password : test
+#  jsp 진행시 설정
+#  mvc: 
+#    view:
+#      prefix: /WEB-INF/views/
+#      suffix: .jsp
+  thymeleaf:
+    cache: false
+  main:
+    allow-bean-definition-overriding: true
+# level은 TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF
+logging:
+  file : 
+    path : logs 
+  level:
+    org:
+      springframework:
+        web: DEBUG
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: DEBUG
+              
