@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/header::userHead"></head>
+		
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+			$('[name^="bank_list"]').click(function(e){
+				var id = $(this).attr('id');
+				var bankCd = $(this).val();
+
+				$("#bnk_name").text(id);
+				$('#INPUT_BANK_NAME').val(id);
+
+				$('#INPUT_BANK_CODE').val(bankCd);
+				alert('testwset');
+				
+			});
+		});
+		
+		var data = {
+	             ACCO_NO: accoNo,
+	             BANK_NAME: bnkName,
+	             BANK_CODE: bnkCode
+	    }
+	   $.ajax({
+		    url : 'jorjo', //dev
+			type : 'POST',
+			async : true,
+			data: JSON.stringify(data),
+			dataType : "json",
+			contentType : "application/json",
+			data : JSON.stringify(data),
+			success : function(responseData) {
+			},
+			error : function(request, status, error) {
+					alert("오류가 발생하였습니다.");
+				}
+		});
+		function checkAuth(){
+
+		}
+			
+		</script>
+	</head>
+	
+	<body>
+	<div th:replace="layout/top::header"></div>
+		<div class="container">
+			<h1>금융회사에 따른 금융상품</h1>
+					<div class="row mb-3"   th:each="name : ${ItemList}"  >
+		    			<div class="col-md-8 themed-grid-col" th:id="${name.SEQ}" name="item_list">상품판매중단일자 <span  th:text="${name.PRD_HALT_DATE}"></span></div>
+		    			<div class="col-md-8 themed-grid-col" th:id="${name.SEQ}" name="item_list">번호   <span  th:text="${name.SEQ}"></span></div>
+		    			<div class="col-md-8 themed-grid-col" th:id="${name.SEQ}" name="item_list">금융회사명 <span  th:text="${name.FNIST_NM}"></span></div>
+		    			<div class="col-md-8 themed-grid-col" th:id="${name.SEQ}" name="item_list">등록일  <span  th:text="${name.REG_DATE}"></span></div>
+		    			<div class="col-md-8 themed-grid-col" th:id="${name.SEQ}" name="item_list">금융상품명 <span  th:text="${name.PRD_NM}"></span></div><br><br>
+					</div>
+		
+			<div class="btn-group">
+	          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal"><span  th:text="${numOfRows}"> 몇개</button>
+	          <button type="button" class="btn btn-sm btn-outline-secondary"><span  th:text="${pageNo}"> 페이지 번호</button>
+	          <button type="button" class="btn btn-sm btn-outline-secondary"><span  th:text="${totalCount}"> 전체 개수</button>
+	        </div>
+	      
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        ...
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<form th:action = "@{/mypage/jorjo2.do}" class="form" id="accoForm" method="post" style="display:none">
+				<div>
+					<input type="hidden" id="INPUT_ACCO_NO" name="ACCO_NO" value="test" >  
+					<input type="hidden" id="INPUT_BANK_CODE" name="BANK_CODE" >
+					<input type="hidden" id="INPUT_BANK_NAME" name="BANK_NAME" >
+					<input type="hidden" id="INPUT_innerRndToken" name="BANK_NAME" >
+				</div>
+			</form>
+		  
+		</div>
+		<!--  부트스트랩 js 사용 -->
+		<script src="/js/bootstrap.js"></script>
+	</body>
+</html>
+

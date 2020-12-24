@@ -1,4 +1,4 @@
-package io.security.corespringsecurity.controller;
+package io.security.corespringsecurity.controller.api;
 
 import com.framework.jo.utils.CommonUtil;
 import com.google.gson.Gson;
@@ -53,7 +53,8 @@ import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 @Controller
 @AllArgsConstructor
-public class MemberController {
+@RequestMapping("/mypage")
+public class GetApiController {
 	
 	// 한 화면에 보여줄 리스트 갯수, 페이징 범위의 갯수
 	public static final int pagePerList = 10;
@@ -62,10 +63,8 @@ public class MemberController {
 	@Autowired
 	private GetDataService getDataService;
 	
-	@Autowired
-	private PasswordEncoder passwordEncoder;
 	
-    /**
+	 /**
      * 
      * 요청주소 http://apis.data.go.kr/B190017/service/GetInsuredProductService202008/getCompanyList202008
      * 서비스URL http://apis.data.go.kr/B190017/service/GetInsuredProductService202008
@@ -103,7 +102,7 @@ public class MemberController {
     	Map<String, Object> map = null;
     	ArrayList<Map<String, Object>> array = new ArrayList<Map<String, Object>>();
     	ModelAndView mv = new ModelAndView();
-    	mv.setViewName("depositcompany");
+    	mv.setViewName("api/depositcompany");
     	
     	ResponseEntity<String> resultEntity = getDataService.getCompanyDataService();
 		
@@ -144,27 +143,96 @@ public class MemberController {
         
         return mv;
     }
-    
-    @GetMapping("/testreturn.do")
-    public ModelAndView testreturn(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    	URI urlToUri = null;
+	
+    /**
+     * 
+     * 요청주소 http://apis.data.go.kr/B190017/service/GetInsuredProductService202008/getProductList202008
+     * 서비스URL http://apis.data.go.kr/B190017/service/GetInsuredProductService202008
+     * 금융권역, 금융회사명, 금융상품명, 상품판매중단일 등 금융회사별 보호대상 금융상품을 조회하는 기능
+     * 
+     * Request
+     *  서비스키	ServiceKey	400	필	-	공공데이터포털에서 받은 인증
+     *  페이지 번호	pageNo	4	옵	1	페이지번호              
+     *  한 페이지 결과 수	numOfRows	4	옵	10	한 페이지 결과 수 
+     *  결과형식	resultType	4	옵	xml	결과형식(xml/json) 
+     *  금융권역	regnNm	100	옵	금융투자	금융권역           
+     *  금융회사명	fncIstNm	100	옵	SK증권주식회사	금융회사명  
+     *  금융상품명	prdNm	1000	옵	비과세장기회사채형	금융상품명  
+     * 
+     * Response
+     *  결과코드	resultCode	2	필	00	결과코드                      
+     *  결과메시지	resultMsg	50	필	OK	결과메시지                     
+     *  한 페이지 결과 수	numOfRows	4	필	10	한 페이지 결과 수            
+     *  페이지 번호	pageNo	4	필	1	3                             
+     *  전체 결과 수	totalCount	4	필	3	전체 결과 수                   
+     * @throws IOException 
+     *  번호	num	4	필	1	일련번호                                  
+     *  금융회사명	fncIstNm	200	필	SK증권주식회사	금융기관 이름           
+     *  금융상품명	prdNm	200	필	비과세장기회사채형	금융상품 이름               
+     *  상품판매중단일자	prdSalDscnDt	8	필	20091231	상품판매중단일자  
+     *  등록일	regDate	8	필	20200225	등록일                       
+     * 
+     * prdSalDscnDt
+     * num
+     * fncIstNm
+     * regDate
+     * prdNm
+     * 
+     * 
+     */
+    @PostMapping("/getDepositItem.do")
+    public ModelAndView getDepositItem(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    	String bankNm = request.getParameter("FNIST_NM");
     	
     	Map<String, Object> map = null;
     	ArrayList<Map<String, Object>> array = new ArrayList<Map<String, Object>>();
+    	
     	ModelAndView mv = new ModelAndView();
-    	mv.setViewName("depositcompany");
+    	mv.setViewName("api/deposititem");
     	
-    	JsonObject jsonobject = new JsonObject();
-    	jsonobject.addProperty("tradeKey", "test");
-    	jsonobject.addProperty("successYn", "testtest2");
+    	ResponseEntity<String> resultEntity = getDataService.getItemDataService(bankNm);
     	
-    	HttpHeaders httpheader = new HttpHeaders();
-    	httpheader.set(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE);
+    	String sResult = resultEntity.getBody();
     	
-    	ResponseEntity<String> resultEntity = CommonUtil.callExtApi("http://dcapi-revtrans-gw.clayon.io/api/v1/testReturn", jsonobject);
+    	Gson gson = new Gson();
+		JsonObject jsonobject = new JsonObject();
+		JsonObject jsondataHeader = new JsonObject();
+		JsonArray jsondataItem = new JsonArray();
+		JsonObject jsondataBody = new JsonObject();
 		
-		String sResult = resultEntity.getBody();
+		jsonobject  = gson.fromJson(sResult, JsonObject.class);
+		
+		jsondataHeader = (JsonObject) jsonobject.get("getProductList");
+		jsondataBody = (JsonObject) jsondataHeader.get("header");
+		jsondataItem = (JsonArray) jsondataHeader.get("item");
+		
+		//String rows 	=jsondataHeader.get("rows").getAsString();				//
+		String numOfRows= jsondataHeader.get("numOfRows").getAsString();		//현재개수
+		String pageNo	= jsondataHeader.get("pageNo").getAsString();			//페이지번호
+		String totalCount= jsondataHeader.get("totalCount").getAsString();		//전체수
+		
+		for (int i = 0; i < jsondataItem.size(); i++) {
+			map = new HashMap<String, Object>();
+			jsondataBody = jsondataItem.get(i).getAsJsonObject();
+			map.put("PRD_HALT_DATE", jsondataBody.get("prdSalDscnDt").getAsString());
+			map.put("SEQ", jsondataBody.get("num").getAsString());
+			map.put("FNIST_NM", jsondataBody.get("fncIstNm").getAsString());
+			map.put("REG_DATE", jsondataBody.get("regDate").getAsString());
+			map.put("PRD_NM", jsondataBody.get("prdNm").getAsString());
+			
+			array.add(map);
+		}
+		
+        mv.addObject("ItemList", array);
+        
+        //페이지 처리
+        mv.addObject("numOfRows", numOfRows);
+        mv.addObject("pageNo", pageNo);
+        mv.addObject("totalCount", totalCount);
+    	
+    	
         return mv;
     }
+    
     
 }

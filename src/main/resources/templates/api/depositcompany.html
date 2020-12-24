@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/header::userHead"></head>
+
+<!-- 		<title>금융회사정보</title>
+		
+		부트스트랩 css 사용
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<script type="text/javascript" src="/js/jquery-2.1.3.min.js" ></script> -->
+		
+		<script type="text/javascript">
+
+		/* 
+			regnNm  - 금융투자
+			fncIstNm - SK증권주식회사
+			prdNm - 비과세장기회사채형
+		*/
+		$(document).ready(function() {
+			$('[name^="bank_list"]').click(function(e){
+				var id = $(this).attr('id');
+				$("#FNIST_NM").val(id);
+
+				$("div.modal.fade").find(".modal-body").html("<span>"+ id +" </span>");
+				
+				$("#exampleModal").modal("show");
+				
+			});
+		});
+
+		//취소시 클릭시
+		function popCancel(){
+			$("#exampleModal").modal("hide");
+		}
+
+		//확인 클릭시
+		function popConfirm(){
+			$("#nextPage").submit();
+		}
+
+		</script>
+	
+	<body>
+	<div th:replace="layout/top::header"></div>
+		<div class="container">
+			<h1>금융회사</h1>
+			<div class="row mb-3"  th:each="name : ${bankList}">
+	    			<button class="col-sm-4 themed-grid-col" th:id="${name.COMPNM}" name="bank_list"><span th:text="${name.COMPNM}"></span></button>
+			</div>
+		
+			<div class="btn-group">
+	          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal"><span th:text="${numOfRows}"></span>몇개</button>
+	          <button type="button" class="btn btn-sm btn-outline-secondary"><span th:text="${pageNo}"></span>페이지 번호</button>
+	          <button type="button" class="btn btn-sm btn-outline-secondary"><span th:text="${totalCount}"></span>전체 개수</button>
+	        </div>
+	      
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">선택하신 금융회사를 확인해주세요.</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick ="popCancel()">취소</button>
+			        <button type="button" class="btn btn-primary" onclick ="popConfirm()">확인</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		  
+		</div>
+		
+		<!--  부트스트랩 js 사용 -->
+		<form th:action="@{/mypage/getDepositItem.do}" class="form" id="nextPage" method="post" style="display:none">
+			<input type="hidden" id="FNIST_NM" name="FNIST_NM" >  
+		</form>
+		<script src="/js/bootstrap.js"></script>
+	</body>
+</html>

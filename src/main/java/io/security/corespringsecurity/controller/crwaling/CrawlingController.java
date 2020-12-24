@@ -1,4 +1,4 @@
-package io.security.corespringsecurity.controller;
+package io.security.corespringsecurity.controller.crwaling;
 
 import lombok.AllArgsConstructor;
 
@@ -14,10 +14,12 @@ import javax.servlet.http.HttpServletRequest;
 import org.jsoup.Jsoup;
 import org.jsoup.select.Elements;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 @RestController
 @AllArgsConstructor
+@RequestMapping("/internal")
 public class CrawlingController {
 
     @GetMapping("/crawling.do")
@@ -99,7 +101,7 @@ public class CrawlingController {
     	Map<String, Object> map = null;
     	ArrayList<Map<String, Object>> array = new ArrayList<Map<String, Object>>();
     	ModelAndView mv = new ModelAndView();
-    	mv.setViewName("googlemap");
+    	mv.setViewName("internal/googlemap");
         
         return mv;
     }
