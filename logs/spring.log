@@ -2361,3 +2361,2177 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'kbdata.role_resources' doesn
         role_hierarchy rolehierar0_ 
     where
         rolehierar0_.child_name=?
+2020-12-24 12:59:47.030  INFO 16688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-24 12:59:47.032  INFO 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-24 12:59:47.032 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-12-24 12:59:47.032 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2020-12-24 12:59:47.032 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2020-12-24 12:59:47.035 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c6c93f8
+2020-12-24 12:59:47.036 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@55cf5626
+2020-12-24 12:59:47.036 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-12-24 12:59:47.036  INFO 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-12-24 12:59:47.067 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 12:59:47.071 DEBUG 16688 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 12:59:47.103 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 12:59:47.543 DEBUG 16688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 12:59:48.139 DEBUG 16688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/jquery-2.1.3.min.js", parameters={}
+2020-12-24 12:59:48.141 DEBUG 16688 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/base.css", parameters={}
+2020-12-24 12:59:48.160 DEBUG 16688 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-24 12:59:48.160 DEBUG 16688 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-24 12:59:48.176 DEBUG 16688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-12-24 12:59:48.199 DEBUG 16688 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 12:59:48.237 DEBUG 16688 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/jorjo.jpg", parameters={}
+2020-12-24 12:59:48.239 DEBUG 16688 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-24 12:59:48.253 DEBUG 16688 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 12:59:48.475 DEBUG 16688 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2020-12-24 12:59:48.476 DEBUG 16688 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-24 12:59:48.483 DEBUG 16688 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-12-24 12:59:48.484 DEBUG 16688 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-12-24 12:59:48.489 DEBUG 16688 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-12-24 12:59:48.491 DEBUG 16688 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-12-24 12:59:48.514 DEBUG 16688 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-12-24 12:59:48.515 DEBUG 16688 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 24 12:59:48 KST 2020, status=404, error=Not Found, message=, path=/favicon.ico}]
+2020-12-24 12:59:48.613 DEBUG 16688 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-12-24 12:59:49.499 DEBUG 16688 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 12:59:49.500 DEBUG 16688 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 12:59:49.505 DEBUG 16688 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 12:59:49.518 DEBUG 16688 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 12:59:50.889 DEBUG 16688 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 12:59:50.890 DEBUG 16688 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 12:59:50.892 DEBUG 16688 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 12:59:50.910 DEBUG 16688 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 12:59:51.378 DEBUG 16688 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 12:59:51.379 DEBUG 16688 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 12:59:51.381 DEBUG 16688 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 12:59:51.400 DEBUG 16688 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:00:47.207  INFO 16688 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-24 13:00:48.652  INFO 16688 --- [RMI TCP Connection(17)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-24 13:00:48.656  INFO 16688 --- [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 13:00:48.660  INFO 16688 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-24 13:00:48.682  INFO 16688 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-24 13:00:58.617  INFO 22084 --- [main] i.s.c.SpringauthorApplication            : Starting SpringauthorApplication using Java 11.0.9 on DESKTOP-8E24NM6 with PID 22084 (C:\Users\kds\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\springauthor\bin\main started by kds in C:\Users\kds\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\springauthor)
+2020-12-24 13:00:58.622  INFO 22084 --- [main] i.s.c.SpringauthorApplication            : No active profile set, falling back to default profiles: default
+2020-12-24 13:01:00.267  INFO 22084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-24 13:01:00.269  INFO 22084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-12-24 13:01:00.486  INFO 22084 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.AccessIpRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:01:00.496  INFO 22084 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.ResourcesRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:01:00.498  INFO 22084 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.RoleHierarchyRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:01:00.501  INFO 22084 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.RoleRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:01:00.504  INFO 22084 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:01:00.505  INFO 22084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 230 ms. Found 0 JDBC repository interfaces.
+2020-12-24 13:01:00.520  INFO 22084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-24 13:01:00.521  INFO 22084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-24 13:01:00.657  INFO 22084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 5 JPA repository interfaces.
+2020-12-24 13:01:01.142  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@f9f3928' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.180  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#3d19d85' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.181  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#3d19d85' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.183  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#6ed043d3' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.188  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#58fa5769' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.190  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#58fa5769' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.198  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.230  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.268  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.283  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.292  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.297  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.301  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.302  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$569/0x000000080045dc40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.310  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.372  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.375  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:01.458  INFO 22084 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-24 13:01:01.530  INFO 22084 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-24 13:01:01.751  INFO 22084 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-24 13:01:01.905  INFO 22084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-24 13:01:02.885  INFO 22084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-24 13:01:02.906  INFO 22084 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-24 13:01:03.388  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.jpa.domain.support.AuditingEntityListener' of type [org.springframework.data.jpa.domain.support.AuditingEntityListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:04.105 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       drop 
+       foreign key FKi84870gssnbi37wfqfifekghb
+2020-12-24 13:01:04.135 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       drop 
+       foreign key FKtp61eta5i06bug3w1qr6286uf
+2020-12-24 13:01:04.161 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       drop 
+       foreign key FK7nx52tgar4fm7tk54jil95oxb
+2020-12-24 13:01:04.188 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       drop 
+       foreign key FK7k960kk6pu1pwsk7ml4hycp53
+2020-12-24 13:01:04.210 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       drop 
+       foreign key FK8k22y1jmevnedy4v80tl1yop7
+2020-12-24 13:01:04.231 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists access_ip
+2020-12-24 13:01:04.268 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists account
+2020-12-24 13:01:04.303 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists account_roles
+2020-12-24 13:01:04.326 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists hibernate_sequence
+2020-12-24 13:01:04.352 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists resources
+2020-12-24 13:01:04.384 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role
+2020-12-24 13:01:04.408 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role_hierarchy
+2020-12-24 13:01:04.432 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role_resources
+2020-12-24 13:01:04.466 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    create table access_ip (
+       ip_id bigint not null,
+        ip_address varchar(255) not null,
+        primary key (ip_id)
+    ) engine=InnoDB
+2020-12-24 13:01:04.501 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    create table account (
+       id bigint not null,
+        age integer,
+        email varchar(255),
+        password varchar(255),
+        username varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2020-12-24 13:01:04.535 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    create table account_roles (
+       account_id bigint not null,
+        role_id bigint not null,
+        primary key (account_id, role_id)
+    ) engine=InnoDB
+2020-12-24 13:01:04.568 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    create table hibernate_sequence (
+       next_val bigint
+    ) engine=InnoDB
+2020-12-24 13:01:04.603 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    insert into hibernate_sequence values ( 1 )
+2020-12-24 13:01:04.619 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    create table resources (
+       resource_id bigint not null,
+        http_method varchar(255),
+        order_num integer,
+        resource_name varchar(255),
+        resource_type varchar(255),
+        primary key (resource_id)
+    ) engine=InnoDB
+2020-12-24 13:01:04.652 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    create table role (
+       role_id bigint not null,
+        role_desc varchar(255),
+        role_name varchar(255),
+        primary key (role_id)
+    ) engine=InnoDB
+2020-12-24 13:01:04.685 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    create table role_hierarchy (
+       id bigint not null,
+        child_name varchar(255),
+        parent_name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2020-12-24 13:01:04.718 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    create table role_resources (
+       resource_id bigint not null,
+        role_id bigint not null,
+        primary key (resource_id, role_id)
+    ) engine=InnoDB
+2020-12-24 13:01:04.753 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       add constraint UK_aux81x2bb3geojtq6mf8rs19l unique (child_name)
+2020-12-24 13:01:04.780 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       add constraint FKi84870gssnbi37wfqfifekghb 
+       foreign key (role_id) 
+       references role (role_id)
+2020-12-24 13:01:04.837 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       add constraint FKtp61eta5i06bug3w1qr6286uf 
+       foreign key (account_id) 
+       references account (id)
+2020-12-24 13:01:04.905 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       add constraint FK7nx52tgar4fm7tk54jil95oxb 
+       foreign key (parent_name) 
+       references role_hierarchy (child_name)
+2020-12-24 13:01:04.965 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       add constraint FK7k960kk6pu1pwsk7ml4hycp53 
+       foreign key (role_id) 
+       references role (role_id)
+2020-12-24 13:01:05.030 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       add constraint FK8k22y1jmevnedy4v80tl1yop7 
+       foreign key (resource_id) 
+       references resources (resource_id)
+2020-12-24 13:01:05.171  INFO 22084 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-24 13:01:05.189  INFO 22084 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 13:01:05.197  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:05.198  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:05.297  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#7dffda8b' of type [com.sun.proxy.$Proxy90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:05.337  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:05.340  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.140  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'resourcesRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.141  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'resourcesRepository' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.147  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#42536da6' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.148  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#42536da6' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.149  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#58b5d5fc' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.150  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#73d7d676' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.150  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#73d7d676' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.151  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#1f3aa970' of type [com.sun.proxy.$Proxy90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.175  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'accessIpRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.175  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'accessIpRepository' of type [com.sun.proxy.$Proxy99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.176  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityResourceService' of type [io.security.corespringsecurity.service.SecurityResourceService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.177  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityConfig' of type [io.security.corespringsecurity.security.configs.MethodSecurityConfig$$EnhancerBySpringCGLIB$$87bcfdc8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.183  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodResourcesMapFactoryBean' of type [io.security.corespringsecurity.security.factory.MethodResourcesMapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.231 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_0_,
+        role2_.role_id as role_id1_4_1_,
+        resources0_.http_method as http_met2_3_0_,
+        resources0_.order_num as order_nu3_3_0_,
+        resources0_.resource_name as resource4_3_0_,
+        resources0_.resource_type as resource5_3_0_,
+        role2_.role_desc as role_des2_4_1_,
+        role2_.role_name as role_nam3_4_1_,
+        roleset1_.resource_id as resource1_6_0__,
+        roleset1_.role_id as role_id2_6_0__ 
+    from
+        resources resources0_ 
+    inner join
+        role_resources roleset1_ 
+            on resources0_.resource_id=roleset1_.resource_id 
+    inner join
+        role role2_ 
+            on roleset1_.role_id=role2_.role_id 
+    where
+        resources0_.resource_type='method' 
+    order by
+        resources0_.order_num desc
+2020-12-24 13:01:06.269  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodResourcesMapFactoryBean' of type [java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.271  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mapBasedMethodSecurityMetadataSource' of type [org.springframework.security.access.method.MapBasedMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.273  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:01:06.632  INFO 22084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-24 13:01:06.643  INFO 22084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 13:01:06.644  INFO 22084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-24 13:01:06.873  INFO 22084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 13:01:06.874  INFO 22084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8123 ms
+2020-12-24 13:01:07.174 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_0_,
+        role2_.role_id as role_id1_4_1_,
+        resources0_.http_method as http_met2_3_0_,
+        resources0_.order_num as order_nu3_3_0_,
+        resources0_.resource_name as resource4_3_0_,
+        resources0_.resource_type as resource5_3_0_,
+        role2_.role_desc as role_des2_4_1_,
+        role2_.role_name as role_nam3_4_1_,
+        roleset1_.resource_id as resource1_6_0__,
+        roleset1_.role_id as role_id2_6_0__ 
+    from
+        resources resources0_ 
+    inner join
+        role_resources roleset1_ 
+            on resources0_.resource_id=roleset1_.resource_id 
+    inner join
+        role role2_ 
+            on roleset1_.role_id=role2_.role_id 
+    where
+        resources0_.resource_type='url' 
+    order by
+        resources0_.order_num desc
+2020-12-24 13:01:07.249  INFO 22084 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter permitAllFilter was not registered (disabled)
+2020-12-24 13:01:07.715  INFO 22084 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.boot.autoconfigure.security.servlet.StaticResourceRequest$StaticResourceRequestMatcher@3ca9d3b2 with []
+2020-12-24 13:01:07.749  INFO 22084 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a358906, org.springframework.security.web.context.SecurityContextPersistenceFilter@164db8f0, org.springframework.security.web.header.HeaderWriterFilter@6b30ff23, org.springframework.security.web.csrf.CsrfFilter@5fd5d6d1, org.springframework.security.web.authentication.logout.LogoutFilter@167f9043, io.security.corespringsecurity.security.filter.AjaxLoginProcessingFilter@893081e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13e5b262, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21f0cc97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@626ff077, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a941fb4, org.springframework.security.web.session.SessionManagementFilter@5ace6611, org.springframework.security.web.access.ExceptionTranslationFilter@6b9fc5c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@136cad3e]
+2020-12-24 13:01:07.753  INFO 22084 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34cb1310, org.springframework.security.web.context.SecurityContextPersistenceFilter@78e4fa1, org.springframework.security.web.header.HeaderWriterFilter@8113ea7, org.springframework.security.web.authentication.logout.LogoutFilter@3cd89c72, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3fb4beb1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4516c2ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44f338ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b5a04b0, org.springframework.security.web.session.SessionManagementFilter@1c879f07, org.springframework.security.web.access.ExceptionTranslationFilter@4ee19768, io.security.corespringsecurity.security.filter.PermitAllFilter@69f24965, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a3404fa]
+2020-12-24 13:01:07.932  INFO 22084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 13:01:07.946 DEBUG 22084 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-12-24 13:01:08.036 DEBUG 22084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 36 mappings in 'requestMappingHandlerMapping'
+2020-12-24 13:01:08.078 DEBUG 22084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-12-24 13:01:08.091 DEBUG 22084 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-12-24 13:01:08.538  INFO 22084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-24 13:01:08.584 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:01:08.622 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:08.627 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:08.682 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_,
+        resources0_.http_method as http_met2_3_,
+        resources0_.order_num as order_nu3_3_,
+        resources0_.resource_name as resource4_3_,
+        resources0_.resource_type as resource5_3_ 
+    from
+        resources resources0_ 
+    where
+        resources0_.resource_name=? 
+        and resources0_.http_method=?
+2020-12-24 13:01:08.691 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:08.696 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:08.753 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:01:08.760 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        resources
+        (http_method, order_num, resource_name, resource_type, resource_id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:01:08.774 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_resources
+        (resource_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:01:08.781 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_,
+        resources0_.http_method as http_met2_3_,
+        resources0_.order_num as order_nu3_3_,
+        resources0_.resource_name as resource4_3_,
+        resources0_.resource_type as resource5_3_ 
+    from
+        resources resources0_ 
+    where
+        resources0_.resource_name=? 
+        and resources0_.http_method=?
+2020-12-24 13:01:08.790 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:08.796 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:08.818 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        account0_.id as id1_1_,
+        account0_.age as age2_1_,
+        account0_.email as email3_1_,
+        account0_.password as password4_1_,
+        account0_.username as username5_1_ 
+    from
+        account account0_ 
+    where
+        account0_.username=?
+2020-12-24 13:01:08.972 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:08.977 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:08.999 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:01:09.008 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:09.013 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:09.030 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        resources
+        (http_method, order_num, resource_name, resource_type, resource_id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:01:09.035 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        account
+        (age, email, password, username, id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:01:09.041 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:01:09.050 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_resources
+        (resource_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:01:09.056 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        account_roles
+        (account_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:01:09.062 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:01:09.071 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:09.076 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:09.099 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:01:09.109 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:09.114 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:09.134 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:01:09.138 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:01:09.143 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:01:09.152 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:09.156 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:09.178 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:01:09.182 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        role_hierarchy 
+    set
+        child_name=?,
+        parent_name=? 
+    where
+        id=?
+2020-12-24 13:01:09.189 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:01:09.208 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:01:09.218 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:09.223 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:09.245 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        accessip0_.ip_id as ip_id1_0_,
+        accessip0_.ip_address as ip_addre2_0_ 
+    from
+        access_ip accessip0_ 
+    where
+        accessip0_.ip_address=?
+2020-12-24 13:01:09.255 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:01:09.260 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:01:09.278 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:01:09.283 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        access_ip
+        (ip_address, ip_id) 
+    values
+        (?, ?)
+2020-12-24 13:01:09.288 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    update
+        role_hierarchy 
+    set
+        child_name=?,
+        parent_name=? 
+    where
+        id=?
+2020-12-24 13:01:09.308  INFO 22084 --- [main] i.s.c.SpringauthorApplication            : Started SpringauthorApplication in 11.565 seconds (JVM running for 14.388)
+2020-12-24 13:01:09.325 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_
+2020-12-24 13:01:09.333 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_0_,
+        rolehierar0_.child_name as child_na2_5_0_,
+        rolehierar0_.parent_name as parent_n3_5_0_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:01:09.339 DEBUG 22084 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_0_,
+        rolehierar0_.child_name as child_na2_5_0_,
+        rolehierar0_.parent_name as parent_n3_5_0_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:01:24.956  INFO 22084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-24 13:01:24.958  INFO 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-24 13:01:24.958 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-12-24 13:01:24.958 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2020-12-24 13:01:24.958 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2020-12-24 13:01:24.960 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5a08d301
+2020-12-24 13:01:24.961 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@32084a01
+2020-12-24 13:01:24.961 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-12-24 13:01:24.961  INFO 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-12-24 13:01:24.986 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:01:24.990 DEBUG 22084 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:01:25.018 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:01:25.576 DEBUG 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:01:26.384 DEBUG 22084 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:01:26.384 DEBUG 22084 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:01:26.392 DEBUG 22084 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:01:26.405 DEBUG 22084 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:01:27.178 DEBUG 22084 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/config", parameters={}
+2020-12-24 13:01:27.179 DEBUG 22084 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.admin.ConfigController#config()
+2020-12-24 13:01:27.181 DEBUG 22084 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:01:27.205 DEBUG 22084 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:01:27.754 DEBUG 22084 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 13:01:27.754 DEBUG 22084 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 13:01:27.755 DEBUG 22084 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:01:27.770 DEBUG 22084 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:01:28.301 DEBUG 22084 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:01:28.302 DEBUG 22084 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:01:28.304 DEBUG 22084 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:01:28.318 DEBUG 22084 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:01:29.551 DEBUG 22084 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:01:29.552 DEBUG 22084 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:01:29.554 DEBUG 22084 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:01:29.574 DEBUG 22084 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:01:32.437 DEBUG 22084 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:01:32.439 DEBUG 22084 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:01:32.441 DEBUG 22084 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:01:32.452 DEBUG 22084 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:01:33.646 DEBUG 22084 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 13:01:33.646 DEBUG 22084 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 13:01:33.647 DEBUG 22084 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:01:33.656 DEBUG 22084 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:02.366  INFO 22084 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-24 13:02:03.902  INFO 22084 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-24 13:02:03.908  INFO 22084 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 13:02:03.912  INFO 22084 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-24 13:02:03.957  INFO 22084 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-24 13:02:15.009  INFO 17068 --- [main] i.s.c.SpringauthorApplication            : Starting SpringauthorApplication using Java 11.0.9 on DESKTOP-8E24NM6 with PID 17068 (C:\Users\kds\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\springauthor\bin\main started by kds in C:\Users\kds\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\springauthor)
+2020-12-24 13:02:15.015  INFO 17068 --- [main] i.s.c.SpringauthorApplication            : No active profile set, falling back to default profiles: default
+2020-12-24 13:02:16.346  INFO 17068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-24 13:02:16.347  INFO 17068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-12-24 13:02:16.450  INFO 17068 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.AccessIpRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:02:16.456  INFO 17068 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.ResourcesRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:02:16.460  INFO 17068 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.RoleHierarchyRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:02:16.464  INFO 17068 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.RoleRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:02:16.468  INFO 17068 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:02:16.469  INFO 17068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 0 JDBC repository interfaces.
+2020-12-24 13:02:16.483  INFO 17068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-24 13:02:16.483  INFO 17068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-24 13:02:16.643  INFO 17068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 5 JPA repository interfaces.
+2020-12-24 13:02:17.155  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@708f018e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.189  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#60c73e58' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.190  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#60c73e58' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.192  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#1e1b061' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.196  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#6ca372ef' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.198  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#6ca372ef' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.203  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.233  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.270  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.284  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.293  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.298  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.302  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.304  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$569/0x000000080045dc40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.313  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.447  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.460  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:17.724  INFO 17068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-24 13:02:17.852  INFO 17068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-24 13:02:18.299  INFO 17068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-24 13:02:18.679  INFO 17068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-24 13:02:19.508  INFO 17068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-24 13:02:19.526  INFO 17068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-24 13:02:20.000  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.jpa.domain.support.AuditingEntityListener' of type [org.springframework.data.jpa.domain.support.AuditingEntityListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:20.569 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       drop 
+       foreign key FKi84870gssnbi37wfqfifekghb
+2020-12-24 13:02:20.598 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       drop 
+       foreign key FKtp61eta5i06bug3w1qr6286uf
+2020-12-24 13:02:20.618 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       drop 
+       foreign key FK7nx52tgar4fm7tk54jil95oxb
+2020-12-24 13:02:20.637 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       drop 
+       foreign key FK7k960kk6pu1pwsk7ml4hycp53
+2020-12-24 13:02:20.657 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       drop 
+       foreign key FK8k22y1jmevnedy4v80tl1yop7
+2020-12-24 13:02:20.676 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists access_ip
+2020-12-24 13:02:20.701 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists account
+2020-12-24 13:02:20.727 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists account_roles
+2020-12-24 13:02:20.751 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists hibernate_sequence
+2020-12-24 13:02:20.772 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists resources
+2020-12-24 13:02:20.796 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role
+2020-12-24 13:02:20.817 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role_hierarchy
+2020-12-24 13:02:20.840 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role_resources
+2020-12-24 13:02:20.867 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    create table access_ip (
+       ip_id bigint not null,
+        ip_address varchar(255) not null,
+        primary key (ip_id)
+    ) engine=InnoDB
+2020-12-24 13:02:20.896 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    create table account (
+       id bigint not null,
+        age integer,
+        email varchar(255),
+        password varchar(255),
+        username varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2020-12-24 13:02:20.935 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    create table account_roles (
+       account_id bigint not null,
+        role_id bigint not null,
+        primary key (account_id, role_id)
+    ) engine=InnoDB
+2020-12-24 13:02:20.971 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    create table hibernate_sequence (
+       next_val bigint
+    ) engine=InnoDB
+2020-12-24 13:02:21.006 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    insert into hibernate_sequence values ( 1 )
+2020-12-24 13:02:21.022 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    create table resources (
+       resource_id bigint not null,
+        http_method varchar(255),
+        order_num integer,
+        resource_name varchar(255),
+        resource_type varchar(255),
+        primary key (resource_id)
+    ) engine=InnoDB
+2020-12-24 13:02:21.051 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    create table role (
+       role_id bigint not null,
+        role_desc varchar(255),
+        role_name varchar(255),
+        primary key (role_id)
+    ) engine=InnoDB
+2020-12-24 13:02:21.079 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    create table role_hierarchy (
+       id bigint not null,
+        child_name varchar(255),
+        parent_name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2020-12-24 13:02:21.109 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    create table role_resources (
+       resource_id bigint not null,
+        role_id bigint not null,
+        primary key (resource_id, role_id)
+    ) engine=InnoDB
+2020-12-24 13:02:21.140 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       add constraint UK_aux81x2bb3geojtq6mf8rs19l unique (child_name)
+2020-12-24 13:02:21.167 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       add constraint FKi84870gssnbi37wfqfifekghb 
+       foreign key (role_id) 
+       references role (role_id)
+2020-12-24 13:02:21.224 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       add constraint FKtp61eta5i06bug3w1qr6286uf 
+       foreign key (account_id) 
+       references account (id)
+2020-12-24 13:02:21.290 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       add constraint FK7nx52tgar4fm7tk54jil95oxb 
+       foreign key (parent_name) 
+       references role_hierarchy (child_name)
+2020-12-24 13:02:21.361 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       add constraint FK7k960kk6pu1pwsk7ml4hycp53 
+       foreign key (role_id) 
+       references role (role_id)
+2020-12-24 13:02:21.421 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       add constraint FK8k22y1jmevnedy4v80tl1yop7 
+       foreign key (resource_id) 
+       references resources (resource_id)
+2020-12-24 13:02:21.498  INFO 17068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-24 13:02:21.509  INFO 17068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 13:02:21.514  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:21.514  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:21.548  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#6342ff7f' of type [com.sun.proxy.$Proxy90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:21.570  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:21.571  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.018  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'resourcesRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.020  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'resourcesRepository' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.024  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#d70dbeb' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.025  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#d70dbeb' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.025  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#566cc6af' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.026  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#34d11c92' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.026  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#34d11c92' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.028  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#4e933cf1' of type [com.sun.proxy.$Proxy90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.049  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'accessIpRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.049  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'accessIpRepository' of type [com.sun.proxy.$Proxy99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.050  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityResourceService' of type [io.security.corespringsecurity.service.SecurityResourceService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.051  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityConfig' of type [io.security.corespringsecurity.security.configs.MethodSecurityConfig$$EnhancerBySpringCGLIB$$372d3571] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.056  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodResourcesMapFactoryBean' of type [io.security.corespringsecurity.security.factory.MethodResourcesMapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.106 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_0_,
+        role2_.role_id as role_id1_4_1_,
+        resources0_.http_method as http_met2_3_0_,
+        resources0_.order_num as order_nu3_3_0_,
+        resources0_.resource_name as resource4_3_0_,
+        resources0_.resource_type as resource5_3_0_,
+        role2_.role_desc as role_des2_4_1_,
+        role2_.role_name as role_nam3_4_1_,
+        roleset1_.resource_id as resource1_6_0__,
+        roleset1_.role_id as role_id2_6_0__ 
+    from
+        resources resources0_ 
+    inner join
+        role_resources roleset1_ 
+            on resources0_.resource_id=roleset1_.resource_id 
+    inner join
+        role role2_ 
+            on roleset1_.role_id=role2_.role_id 
+    where
+        resources0_.resource_type='method' 
+    order by
+        resources0_.order_num desc
+2020-12-24 13:02:22.142  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodResourcesMapFactoryBean' of type [java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.144  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mapBasedMethodSecurityMetadataSource' of type [org.springframework.security.access.method.MapBasedMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.147  INFO 17068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:02:22.586  INFO 17068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-24 13:02:22.601  INFO 17068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 13:02:22.601  INFO 17068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-24 13:02:22.806  INFO 17068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 13:02:22.807  INFO 17068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7735 ms
+2020-12-24 13:02:22.949 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_0_,
+        role2_.role_id as role_id1_4_1_,
+        resources0_.http_method as http_met2_3_0_,
+        resources0_.order_num as order_nu3_3_0_,
+        resources0_.resource_name as resource4_3_0_,
+        resources0_.resource_type as resource5_3_0_,
+        role2_.role_desc as role_des2_4_1_,
+        role2_.role_name as role_nam3_4_1_,
+        roleset1_.resource_id as resource1_6_0__,
+        roleset1_.role_id as role_id2_6_0__ 
+    from
+        resources resources0_ 
+    inner join
+        role_resources roleset1_ 
+            on resources0_.resource_id=roleset1_.resource_id 
+    inner join
+        role role2_ 
+            on roleset1_.role_id=role2_.role_id 
+    where
+        resources0_.resource_type='url' 
+    order by
+        resources0_.order_num desc
+2020-12-24 13:02:22.999  INFO 17068 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter permitAllFilter was not registered (disabled)
+2020-12-24 13:02:23.367  INFO 17068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.boot.autoconfigure.security.servlet.StaticResourceRequest$StaticResourceRequestMatcher@2e51ede1 with []
+2020-12-24 13:02:23.401  INFO 17068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cc91fe3, org.springframework.security.web.context.SecurityContextPersistenceFilter@28befd62, org.springframework.security.web.header.HeaderWriterFilter@78141c58, org.springframework.security.web.csrf.CsrfFilter@1d45c4b7, org.springframework.security.web.authentication.logout.LogoutFilter@3b850bb7, io.security.corespringsecurity.security.filter.AjaxLoginProcessingFilter@481c1e92, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41120e48, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8ad182c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23d07ad3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66f223fa, org.springframework.security.web.session.SessionManagementFilter@763ddfc3, org.springframework.security.web.access.ExceptionTranslationFilter@5e643402, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@200e6029]
+2020-12-24 13:02:23.405  INFO 17068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64acf8d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@646ddc20, org.springframework.security.web.header.HeaderWriterFilter@893081e, org.springframework.security.web.authentication.logout.LogoutFilter@34114276, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44f338ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22561412, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32153bbe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@112a50a1, org.springframework.security.web.session.SessionManagementFilter@5a941fb4, org.springframework.security.web.access.ExceptionTranslationFilter@6a358906, io.security.corespringsecurity.security.filter.PermitAllFilter@7d60bd5a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4516c2ef]
+2020-12-24 13:02:23.569  INFO 17068 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 13:02:23.583 DEBUG 17068 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-12-24 13:02:23.674 DEBUG 17068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 36 mappings in 'requestMappingHandlerMapping'
+2020-12-24 13:02:23.717 DEBUG 17068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-12-24 13:02:23.730 DEBUG 17068 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-12-24 13:02:24.365  INFO 17068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-24 13:02:24.431 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:02:24.471 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:24.476 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:24.531 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_,
+        resources0_.http_method as http_met2_3_,
+        resources0_.order_num as order_nu3_3_,
+        resources0_.resource_name as resource4_3_,
+        resources0_.resource_type as resource5_3_ 
+    from
+        resources resources0_ 
+    where
+        resources0_.resource_name=? 
+        and resources0_.http_method=?
+2020-12-24 13:02:24.541 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:24.546 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:24.578 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:02:24.584 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        resources
+        (http_method, order_num, resource_name, resource_type, resource_id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:02:24.596 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_resources
+        (resource_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:02:24.603 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_,
+        resources0_.http_method as http_met2_3_,
+        resources0_.order_num as order_nu3_3_,
+        resources0_.resource_name as resource4_3_,
+        resources0_.resource_type as resource5_3_ 
+    from
+        resources resources0_ 
+    where
+        resources0_.resource_name=? 
+        and resources0_.http_method=?
+2020-12-24 13:02:24.612 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:24.617 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:24.637 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        account0_.id as id1_1_,
+        account0_.age as age2_1_,
+        account0_.email as email3_1_,
+        account0_.password as password4_1_,
+        account0_.username as username5_1_ 
+    from
+        account account0_ 
+    where
+        account0_.username=?
+2020-12-24 13:02:24.896 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:24.901 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:24.921 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:02:24.930 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:24.934 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:24.951 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        resources
+        (http_method, order_num, resource_name, resource_type, resource_id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:02:24.954 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        account
+        (age, email, password, username, id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:02:24.959 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:02:24.963 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_resources
+        (resource_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:02:24.967 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        account_roles
+        (account_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:02:24.972 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:02:24.981 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:24.985 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:25.005 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:02:25.014 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:25.019 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:25.036 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:02:25.040 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:02:25.044 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:02:25.052 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:25.057 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:25.078 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:02:25.082 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        role_hierarchy 
+    set
+        child_name=?,
+        parent_name=? 
+    where
+        id=?
+2020-12-24 13:02:25.087 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:02:25.102 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:02:25.111 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:25.116 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:25.137 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        accessip0_.ip_id as ip_id1_0_,
+        accessip0_.ip_address as ip_addre2_0_ 
+    from
+        access_ip accessip0_ 
+    where
+        accessip0_.ip_address=?
+2020-12-24 13:02:25.146 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:02:25.151 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:02:25.168 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:02:25.172 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        access_ip
+        (ip_address, ip_id) 
+    values
+        (?, ?)
+2020-12-24 13:02:25.176 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    update
+        role_hierarchy 
+    set
+        child_name=?,
+        parent_name=? 
+    where
+        id=?
+2020-12-24 13:02:25.199  INFO 17068 --- [main] i.s.c.SpringauthorApplication            : Started SpringauthorApplication in 10.892 seconds (JVM running for 14.807)
+2020-12-24 13:02:25.216 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_
+2020-12-24 13:02:25.226 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_0_,
+        rolehierar0_.child_name as child_na2_5_0_,
+        rolehierar0_.parent_name as parent_n3_5_0_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:02:25.231 DEBUG 17068 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_0_,
+        rolehierar0_.child_name as child_na2_5_0_,
+        rolehierar0_.parent_name as parent_n3_5_0_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:02:36.180  INFO 17068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-24 13:02:36.181  INFO 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-24 13:02:36.181 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-12-24 13:02:36.181 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2020-12-24 13:02:36.181 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2020-12-24 13:02:36.183 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a99744a
+2020-12-24 13:02:36.184 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@47cf922d
+2020-12-24 13:02:36.184 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-12-24 13:02:36.185  INFO 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-12-24 13:02:36.251 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:02:36.263 DEBUG 17068 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:02:36.306 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:37.332 DEBUG 17068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:38.354 DEBUG 17068 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:02:38.354 DEBUG 17068 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:02:38.365 DEBUG 17068 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:38.378 DEBUG 17068 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:39.283 DEBUG 17068 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/config", parameters={}
+2020-12-24 13:02:39.284 DEBUG 17068 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.admin.ConfigController#config()
+2020-12-24 13:02:39.286 DEBUG 17068 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:39.299 DEBUG 17068 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:40.018 DEBUG 17068 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 13:02:40.018 DEBUG 17068 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 13:02:40.020 DEBUG 17068 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:40.037 DEBUG 17068 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:40.477 DEBUG 17068 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:02:40.478 DEBUG 17068 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:02:40.480 DEBUG 17068 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:40.498 DEBUG 17068 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:40.908 DEBUG 17068 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:02:40.908 DEBUG 17068 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:02:40.910 DEBUG 17068 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:40.929 DEBUG 17068 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:44.110 DEBUG 17068 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:02:44.112 DEBUG 17068 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:02:44.113 DEBUG 17068 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:44.122 DEBUG 17068 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:45.340 DEBUG 17068 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:02:45.341 DEBUG 17068 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:02:45.342 DEBUG 17068 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:45.353 DEBUG 17068 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:46.617 DEBUG 17068 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:02:46.618 DEBUG 17068 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:02:46.619 DEBUG 17068 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:46.630 DEBUG 17068 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:02:47.567 DEBUG 17068 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 13:02:47.568 DEBUG 17068 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 13:02:47.569 DEBUG 17068 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:02:47.580 DEBUG 17068 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:11.030  INFO 17068 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-24 13:03:13.388  INFO 17068 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-24 13:03:13.392  INFO 17068 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 13:03:13.394  INFO 17068 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-24 13:03:13.439  INFO 17068 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-24 13:03:20.676  INFO 22308 --- [main] i.s.c.SpringauthorApplication            : Starting SpringauthorApplication using Java 11.0.9 on DESKTOP-8E24NM6 with PID 22308 (C:\Users\kds\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\springauthor\bin\main started by kds in C:\Users\kds\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\springauthor)
+2020-12-24 13:03:20.682  INFO 22308 --- [main] i.s.c.SpringauthorApplication            : No active profile set, falling back to default profiles: default
+2020-12-24 13:03:21.864  INFO 22308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-24 13:03:21.866  INFO 22308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-12-24 13:03:21.972  INFO 22308 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.AccessIpRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:03:21.978  INFO 22308 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.ResourcesRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:03:21.981  INFO 22308 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.RoleHierarchyRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:03:21.984  INFO 22308 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.RoleRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:03:21.987  INFO 22308 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface io.security.corespringsecurity.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-12-24 13:03:21.989  INFO 22308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 0 JDBC repository interfaces.
+2020-12-24 13:03:22.006  INFO 22308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-24 13:03:22.006  INFO 22308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-24 13:03:22.149  INFO 22308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 5 JPA repository interfaces.
+2020-12-24 13:03:22.596  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@52b06bef' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.632  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#77ab22be' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.633  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#77ab22be' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.634  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#1f67761b' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.638  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#43bf5397' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.640  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#43bf5397' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.647  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.686  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.718  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.731  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.741  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.747  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.750  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.752  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$569/0x000000080045dc40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.758  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.823  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.826  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:22.933  INFO 22308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-24 13:03:23.006  INFO 22308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-24 13:03:23.391  INFO 22308 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-24 13:03:23.541  INFO 22308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-24 13:03:24.130  INFO 22308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-24 13:03:24.147  INFO 22308 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-24 13:03:25.097  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.jpa.domain.support.AuditingEntityListener' of type [org.springframework.data.jpa.domain.support.AuditingEntityListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:25.919 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       drop 
+       foreign key FKi84870gssnbi37wfqfifekghb
+2020-12-24 13:03:25.948 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       drop 
+       foreign key FKtp61eta5i06bug3w1qr6286uf
+2020-12-24 13:03:25.968 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       drop 
+       foreign key FK7nx52tgar4fm7tk54jil95oxb
+2020-12-24 13:03:25.988 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       drop 
+       foreign key FK7k960kk6pu1pwsk7ml4hycp53
+2020-12-24 13:03:26.008 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       drop 
+       foreign key FK8k22y1jmevnedy4v80tl1yop7
+2020-12-24 13:03:26.029 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists access_ip
+2020-12-24 13:03:26.052 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists account
+2020-12-24 13:03:26.075 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists account_roles
+2020-12-24 13:03:26.100 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists hibernate_sequence
+2020-12-24 13:03:26.123 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists resources
+2020-12-24 13:03:26.147 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role
+2020-12-24 13:03:26.170 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role_hierarchy
+2020-12-24 13:03:26.191 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    drop table if exists role_resources
+2020-12-24 13:03:26.219 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    create table access_ip (
+       ip_id bigint not null,
+        ip_address varchar(255) not null,
+        primary key (ip_id)
+    ) engine=InnoDB
+2020-12-24 13:03:26.262 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    create table account (
+       id bigint not null,
+        age integer,
+        email varchar(255),
+        password varchar(255),
+        username varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2020-12-24 13:03:26.297 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    create table account_roles (
+       account_id bigint not null,
+        role_id bigint not null,
+        primary key (account_id, role_id)
+    ) engine=InnoDB
+2020-12-24 13:03:26.334 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    create table hibernate_sequence (
+       next_val bigint
+    ) engine=InnoDB
+2020-12-24 13:03:26.366 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    insert into hibernate_sequence values ( 1 )
+2020-12-24 13:03:26.382 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    create table resources (
+       resource_id bigint not null,
+        http_method varchar(255),
+        order_num integer,
+        resource_name varchar(255),
+        resource_type varchar(255),
+        primary key (resource_id)
+    ) engine=InnoDB
+2020-12-24 13:03:26.411 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    create table role (
+       role_id bigint not null,
+        role_desc varchar(255),
+        role_name varchar(255),
+        primary key (role_id)
+    ) engine=InnoDB
+2020-12-24 13:03:26.446 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    create table role_hierarchy (
+       id bigint not null,
+        child_name varchar(255),
+        parent_name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2020-12-24 13:03:26.479 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    create table role_resources (
+       resource_id bigint not null,
+        role_id bigint not null,
+        primary key (resource_id, role_id)
+    ) engine=InnoDB
+2020-12-24 13:03:26.509 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       add constraint UK_aux81x2bb3geojtq6mf8rs19l unique (child_name)
+2020-12-24 13:03:26.535 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       add constraint FKi84870gssnbi37wfqfifekghb 
+       foreign key (role_id) 
+       references role (role_id)
+2020-12-24 13:03:26.592 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table account_roles 
+       add constraint FKtp61eta5i06bug3w1qr6286uf 
+       foreign key (account_id) 
+       references account (id)
+2020-12-24 13:03:26.652 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_hierarchy 
+       add constraint FK7nx52tgar4fm7tk54jil95oxb 
+       foreign key (parent_name) 
+       references role_hierarchy (child_name)
+2020-12-24 13:03:26.709 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       add constraint FK7k960kk6pu1pwsk7ml4hycp53 
+       foreign key (role_id) 
+       references role (role_id)
+2020-12-24 13:03:26.764 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    
+    alter table role_resources 
+       add constraint FK8k22y1jmevnedy4v80tl1yop7 
+       foreign key (resource_id) 
+       references resources (resource_id)
+2020-12-24 13:03:26.823  INFO 22308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-24 13:03:26.841  INFO 22308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 13:03:26.847  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:26.847  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:26.882  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#2db4ad1' of type [com.sun.proxy.$Proxy90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:26.898  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:26.898  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.349  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'resourcesRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.351  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'resourcesRepository' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.356  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#8f589d7' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.357  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#8f589d7' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.357  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#3a17acd4' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.358  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#39f8adc0' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.359  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#39f8adc0' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.360  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#38445703' of type [com.sun.proxy.$Proxy90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.381  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'accessIpRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.381  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'accessIpRepository' of type [com.sun.proxy.$Proxy99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.382  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityResourceService' of type [io.security.corespringsecurity.service.SecurityResourceService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.383  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityConfig' of type [io.security.corespringsecurity.security.configs.MethodSecurityConfig$$EnhancerBySpringCGLIB$$3c92f2f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.388  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodResourcesMapFactoryBean' of type [io.security.corespringsecurity.security.factory.MethodResourcesMapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.436 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_0_,
+        role2_.role_id as role_id1_4_1_,
+        resources0_.http_method as http_met2_3_0_,
+        resources0_.order_num as order_nu3_3_0_,
+        resources0_.resource_name as resource4_3_0_,
+        resources0_.resource_type as resource5_3_0_,
+        role2_.role_desc as role_des2_4_1_,
+        role2_.role_name as role_nam3_4_1_,
+        roleset1_.resource_id as resource1_6_0__,
+        roleset1_.role_id as role_id2_6_0__ 
+    from
+        resources resources0_ 
+    inner join
+        role_resources roleset1_ 
+            on resources0_.resource_id=roleset1_.resource_id 
+    inner join
+        role role2_ 
+            on roleset1_.role_id=role2_.role_id 
+    where
+        resources0_.resource_type='method' 
+    order by
+        resources0_.order_num desc
+2020-12-24 13:03:27.470  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodResourcesMapFactoryBean' of type [java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.472  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mapBasedMethodSecurityMetadataSource' of type [org.springframework.security.access.method.MapBasedMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.474  INFO 22308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 13:03:27.762  INFO 22308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-24 13:03:27.775  INFO 22308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 13:03:27.776  INFO 22308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-24 13:03:27.976  INFO 22308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 13:03:27.976  INFO 22308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7228 ms
+2020-12-24 13:03:28.092 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_0_,
+        role2_.role_id as role_id1_4_1_,
+        resources0_.http_method as http_met2_3_0_,
+        resources0_.order_num as order_nu3_3_0_,
+        resources0_.resource_name as resource4_3_0_,
+        resources0_.resource_type as resource5_3_0_,
+        role2_.role_desc as role_des2_4_1_,
+        role2_.role_name as role_nam3_4_1_,
+        roleset1_.resource_id as resource1_6_0__,
+        roleset1_.role_id as role_id2_6_0__ 
+    from
+        resources resources0_ 
+    inner join
+        role_resources roleset1_ 
+            on resources0_.resource_id=roleset1_.resource_id 
+    inner join
+        role role2_ 
+            on roleset1_.role_id=role2_.role_id 
+    where
+        resources0_.resource_type='url' 
+    order by
+        resources0_.order_num desc
+2020-12-24 13:03:28.142  INFO 22308 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter permitAllFilter was not registered (disabled)
+2020-12-24 13:03:28.465  INFO 22308 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.boot.autoconfigure.security.servlet.StaticResourceRequest$StaticResourceRequestMatcher@4028aab2 with []
+2020-12-24 13:03:28.498  INFO 22308 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@220e1b7b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ace6611, org.springframework.security.web.header.HeaderWriterFilter@6b9fc5c7, org.springframework.security.web.csrf.CsrfFilter@6406b84d, org.springframework.security.web.authentication.logout.LogoutFilter@11ad327f, io.security.corespringsecurity.security.filter.AjaxLoginProcessingFilter@54fd5759, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34be7efb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@164db8f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39a09c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a358906, org.springframework.security.web.session.SessionManagementFilter@6b30ff23, org.springframework.security.web.access.ExceptionTranslationFilter@612531a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3889c343]
+2020-12-24 13:03:28.503  INFO 22308 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a3404fa, org.springframework.security.web.context.SecurityContextPersistenceFilter@8113ea7, org.springframework.security.web.header.HeaderWriterFilter@70dd79f7, org.springframework.security.web.authentication.logout.LogoutFilter@6258f9d1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22f7bf36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c879f07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78e4fa1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fb4beb1, org.springframework.security.web.session.SessionManagementFilter@4ee19768, org.springframework.security.web.access.ExceptionTranslationFilter@5923210, io.security.corespringsecurity.security.filter.PermitAllFilter@27234b7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b441609]
+2020-12-24 13:03:28.716  INFO 22308 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 13:03:28.735 DEBUG 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-12-24 13:03:28.807 DEBUG 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 36 mappings in 'requestMappingHandlerMapping'
+2020-12-24 13:03:28.841 DEBUG 22308 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-12-24 13:03:28.857 DEBUG 22308 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-12-24 13:03:29.157  INFO 22308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-24 13:03:29.196 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:03:29.227 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.231 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.277 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_,
+        resources0_.http_method as http_met2_3_,
+        resources0_.order_num as order_nu3_3_,
+        resources0_.resource_name as resource4_3_,
+        resources0_.resource_type as resource5_3_ 
+    from
+        resources resources0_ 
+    where
+        resources0_.resource_name=? 
+        and resources0_.http_method=?
+2020-12-24 13:03:29.285 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.289 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.328 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:03:29.335 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        resources
+        (http_method, order_num, resource_name, resource_type, resource_id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:03:29.345 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_resources
+        (resource_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:03:29.352 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        resources0_.resource_id as resource1_3_,
+        resources0_.http_method as http_met2_3_,
+        resources0_.order_num as order_nu3_3_,
+        resources0_.resource_name as resource4_3_,
+        resources0_.resource_type as resource5_3_ 
+    from
+        resources resources0_ 
+    where
+        resources0_.resource_name=? 
+        and resources0_.http_method=?
+2020-12-24 13:03:29.360 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.365 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.382 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        account0_.id as id1_1_,
+        account0_.age as age2_1_,
+        account0_.email as email3_1_,
+        account0_.password as password4_1_,
+        account0_.username as username5_1_ 
+    from
+        account account0_ 
+    where
+        account0_.username=?
+2020-12-24 13:03:29.512 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.515 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.532 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:03:29.540 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.544 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.559 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        resources
+        (http_method, order_num, resource_name, resource_type, resource_id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:03:29.564 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        account
+        (age, email, password, username, id) 
+    values
+        (?, ?, ?, ?, ?)
+2020-12-24 13:03:29.568 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:03:29.573 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_resources
+        (resource_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:03:29.577 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        account_roles
+        (account_id, role_id) 
+    values
+        (?, ?)
+2020-12-24 13:03:29.582 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        role0_.role_id as role_id1_4_,
+        role0_.role_desc as role_des2_4_,
+        role0_.role_name as role_nam3_4_ 
+    from
+        role role0_ 
+    where
+        role0_.role_name=?
+2020-12-24 13:03:29.590 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.594 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.612 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:03:29.620 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.624 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.639 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (role_desc, role_name, role_id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:03:29.644 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:03:29.651 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:03:29.662 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.668 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.687 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:03:29.691 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        role_hierarchy 
+    set
+        child_name=?,
+        parent_name=? 
+    where
+        id=?
+2020-12-24 13:03:29.696 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:03:29.707 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:03:29.715 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.719 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.737 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        accessip0_.ip_id as ip_id1_0_,
+        accessip0_.ip_address as ip_addre2_0_ 
+    from
+        access_ip accessip0_ 
+    where
+        accessip0_.ip_address=?
+2020-12-24 13:03:29.746 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 13:03:29.750 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 13:03:29.766 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 13:03:29.770 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        access_ip
+        (ip_address, ip_id) 
+    values
+        (?, ?)
+2020-12-24 13:03:29.774 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    update
+        role_hierarchy 
+    set
+        child_name=?,
+        parent_name=? 
+    where
+        id=?
+2020-12-24 13:03:29.792  INFO 22308 --- [main] i.s.c.SpringauthorApplication            : Started SpringauthorApplication in 9.707 seconds (JVM running for 13.051)
+2020-12-24 13:03:29.805 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_
+2020-12-24 13:03:29.815 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_0_,
+        rolehierar0_.child_name as child_na2_5_0_,
+        rolehierar0_.parent_name as parent_n3_5_0_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:03:29.820 DEBUG 22308 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_0_,
+        rolehierar0_.child_name as child_na2_5_0_,
+        rolehierar0_.parent_name as parent_n3_5_0_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 13:03:30.478  INFO 22308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-24 13:03:30.479  INFO 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-24 13:03:30.480 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-12-24 13:03:30.480 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2020-12-24 13:03:30.480 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2020-12-24 13:03:30.482 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1e487d57
+2020-12-24 13:03:30.483 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@54c17a2b
+2020-12-24 13:03:30.483 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-12-24 13:03:30.483  INFO 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-12-24 13:03:30.505 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:03:30.509 DEBUG 22308 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:03:30.532 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:31.447 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:33.982 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:03:33.982 DEBUG 22308 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:03:33.994 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:34.009 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:34.824 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 13:03:34.825 DEBUG 22308 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 13:03:34.826 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:34.837 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:35.454 DEBUG 22308 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/config", parameters={}
+2020-12-24 13:03:35.455 DEBUG 22308 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.admin.ConfigController#config()
+2020-12-24 13:03:35.456 DEBUG 22308 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:35.467 DEBUG 22308 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:35.948 DEBUG 22308 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 13:03:35.949 DEBUG 22308 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 13:03:35.950 DEBUG 22308 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:35.964 DEBUG 22308 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:36.313 DEBUG 22308 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:03:36.313 DEBUG 22308 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:03:36.314 DEBUG 22308 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:36.327 DEBUG 22308 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:36.981 DEBUG 22308 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:03:36.982 DEBUG 22308 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:03:36.985 DEBUG 22308 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:37.017 DEBUG 22308 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:42.949 DEBUG 22308 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-24 13:03:42.950 DEBUG 22308 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.login.LoginController#login(String, String, Model)
+2020-12-24 13:03:42.966 DEBUG 22308 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:42.985 DEBUG 22308 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:44.029 DEBUG 22308 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}
+2020-12-24 13:03:44.030 DEBUG 22308 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#createUser()
+2020-12-24 13:03:44.033 DEBUG 22308 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:44.045 DEBUG 22308 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:45.154 DEBUG 22308 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:03:45.155 DEBUG 22308 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:03:45.156 DEBUG 22308 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:45.167 DEBUG 22308 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:03:46.327 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:03:46.328 DEBUG 22308 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:03:46.330 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:03:46.337 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:12.987 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 13:04:12.987 DEBUG 22308 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 13:04:12.989 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:13.003 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:13.786 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:04:13.786 DEBUG 22308 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:04:13.788 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:13.809 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:14.682 DEBUG 22308 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:04:14.683 DEBUG 22308 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:04:14.685 DEBUG 22308 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:14.695 DEBUG 22308 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:15.775 DEBUG 22308 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:04:15.776 DEBUG 22308 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:04:15.777 DEBUG 22308 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:15.787 DEBUG 22308 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:16.423 DEBUG 22308 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/messages", parameters={}
+2020-12-24 13:04:16.423 DEBUG 22308 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.MessageController#messages()
+2020-12-24 13:04:16.425 DEBUG 22308 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:16.435 DEBUG 22308 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:17.288 DEBUG 22308 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:04:17.289 DEBUG 22308 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:04:17.291 DEBUG 22308 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:17.307 DEBUG 22308 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:17.822 DEBUG 22308 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:04:17.822 DEBUG 22308 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:04:17.823 DEBUG 22308 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:17.832 DEBUG 22308 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:18.659 DEBUG 22308 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:04:18.659 DEBUG 22308 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:04:18.660 DEBUG 22308 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:18.670 DEBUG 22308 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:19.594 DEBUG 22308 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:04:19.596 DEBUG 22308 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:04:19.597 DEBUG 22308 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:19.604 DEBUG 22308 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:20.249 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:04:20.249 DEBUG 22308 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:04:20.250 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:20.260 DEBUG 22308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:21.310 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-12-24 13:04:21.312 DEBUG 22308 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.HomeController#home()
+2020-12-24 13:04:21.313 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:21.320 DEBUG 22308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:21.800 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/mypage", parameters={}
+2020-12-24 13:04:21.800 DEBUG 22308 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.security.corespringsecurity.controller.user.UserController#myPage(Account, Authentication, Principal)
+2020-12-24 13:04:21.801 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-24 13:04:21.813 DEBUG 22308 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-24 13:04:51.265  INFO 22308 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-24 13:04:52.775  INFO 22308 --- [RMI TCP Connection(6)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-24 13:04:52.780  INFO 22308 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 13:04:52.783  INFO 22308 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-24 13:04:52.829  INFO 22308 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

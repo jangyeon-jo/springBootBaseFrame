@@ -29,17 +29,15 @@ dependencies {
 	
 	compile group: 'org.modelmapper', name: 'modelmapper', version: '2.3.0'
 	
-	//testImplementation 'org.springframework.security:spring-security-test'
+	testImplementation 'org.springframework.security:spring-security-test'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
 	
 	implementation 'org.apache.httpcomponents:httpclient:4.5.12'
-    //implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     
     implementation 'com.google.code.gson:gson'
     
     compile 'org.jsoup:jsoup:1.13.1'
-	
 }
 
 test {
