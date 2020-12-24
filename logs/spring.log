@@ -2279,3 +2279,85 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'kbdata.role_resources' doesn
         role_hierarchy rolehierar0_ 
     where
         rolehierar0_.child_name=?
+2020-12-24 12:45:42.890 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 12:45:42.892 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 12:45:42.902 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    select
+        accessip0_.ip_id as ip_id1_0_,
+        accessip0_.ip_address as ip_addre2_0_ 
+    from
+        access_ip accessip0_ 
+    where
+        accessip0_.ip_address=?
+2020-12-24 12:45:42.907 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2020-12-24 12:45:42.909 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2020-12-24 12:45:42.918 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role_hierarchy
+        (child_name, parent_name, id) 
+    values
+        (?, ?, ?)
+2020-12-24 12:45:42.919 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        access_ip
+        (ip_address, ip_id) 
+    values
+        (?, ?)
+2020-12-24 12:45:42.921 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    update
+        role_hierarchy 
+    set
+        child_name=?,
+        parent_name=? 
+    where
+        id=?
+2020-12-24 12:45:42.932  INFO 16688 --- [main] i.s.c.SpringauthorApplication            : Started SpringauthorApplication in 9.644 seconds (JVM running for 12.135)
+2020-12-24 12:45:42.945 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_,
+        rolehierar0_.child_name as child_na2_5_,
+        rolehierar0_.parent_name as parent_n3_5_ 
+    from
+        role_hierarchy rolehierar0_
+2020-12-24 12:45:42.953 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_0_,
+        rolehierar0_.child_name as child_na2_5_0_,
+        rolehierar0_.parent_name as parent_n3_5_0_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
+2020-12-24 12:45:42.955 DEBUG 16688 --- [main] org.hibernate.SQL                        : 
+    select
+        rolehierar0_.id as id1_5_0_,
+        rolehierar0_.child_name as child_na2_5_0_,
+        rolehierar0_.parent_name as parent_n3_5_0_ 
+    from
+        role_hierarchy rolehierar0_ 
+    where
+        rolehierar0_.child_name=?
